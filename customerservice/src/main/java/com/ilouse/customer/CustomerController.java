@@ -14,6 +14,6 @@ public class CustomerController {
 
     @PostMapping
     public void registerCustomer(@RequestBody Customer customer) throws IllegalAccessException {
-         customerService.registerCustomer(customer);
+        customerService.registerCustomer(customer);
     }
 }
