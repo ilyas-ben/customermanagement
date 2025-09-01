@@ -1,4 +1,4 @@
-package com.ilouse.Notification;
+package com.ilouse.notification;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
