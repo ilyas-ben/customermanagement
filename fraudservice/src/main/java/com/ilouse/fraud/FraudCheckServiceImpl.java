@@ -20,6 +20,6 @@ public class FraudCheckServiceImpl implements FraudCheckService {
                         .createdAt(LocalDateTime.now())
                         .build()
         );
-        return false;
+        return true;
     }
 }
