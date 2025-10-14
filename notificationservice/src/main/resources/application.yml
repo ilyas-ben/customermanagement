@@ -1,0 +1,21 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: notification-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      properties:
+        spring.json.trusted.packages: '*'
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+notification:
+  topic: customer-event
+
+twilio:
+  accountSid: YOUR_TWILIO_ACCOUNT_SID
+  authToken: YOUR_TWILIO_AUTH_TOKEN
+  phoneNumber: YOUR_TWILIO_PHONE_NUMBER

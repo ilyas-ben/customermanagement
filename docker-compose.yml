@@ -13,15 +13,6 @@ services:
       - "3308:3306"
     networks:
       - mysql-net
-  adminer:
-    container_name: adminer
-    image: adminer
-    restart: unless-stopped
-    ports:
-      - "8081:8080"
-    networks:
-      - mysql-net
-
 
 networks:
   mysql-net:

@@ -102,5 +102,6 @@
         <module>customerservice</module>
         <module>fraudservice</module>
         <module>eurikaservice</module>
+        <module>notificationservice</module>
     </modules>
 </project>
